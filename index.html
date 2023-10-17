@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column-left">
+            <p class="logo-text">The Odin Project</p>
+            <p class="footer">Photo by <a href="https://unsplash.com/@venajeborec">Václav Pechar</a> on <a href="https://unsplash.com/photos/an-orange-sports-car-driving-down-a-mountain-road-CQwY2fnn1H4">Unsplash</a></p>
+        </div>
+        <div class="column-right">
+            <h1 class="header">Sign Up to Get Started</h1>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla distinctio adipisci, magni dolorem
+                tempora nisi. Sunt dignissimos quia inventore cumque quis repellat nam amet autem.</h2>
+            <form action="action.php" method="post">
+                <div class="formrow">
+                    <div class="formsection">
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label for="firstname" class="formlabel">First Name</label>
+                    </div>
+                    <div class="formsection">
+                        <input type="text" name="lastname" id="lastname" required>
+                        <label for="lastname" class="formlabel">Last Name</label>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formsection">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email" class="formlabel">Email Address</label>
+                    </div>
+                    <div class="formsection">
+                        <input type="text" name="Address" id="Address" required>
+                        <label for="Address" class="formlabel">Address</label>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formsection">
+                        <input type="password" name="password" id="password" onkeyup="check();" required>
+                        <label for="password" class="formlabel">Password</label>
+                    </div>
+                    <div class="formsection">
+                        <input type="password" name="confirm-password" id="confirm-password" onkeyup="check();"
+                            required>
+                        <label for="confirm-password" class="formlabel">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="formsubmitbutton">
+                    <input type="submit" class="button" value="Create Account">
+                </div>
+            </form>
+            <div class="logined">
+                <p>Already have an account? <span class="linked">Log In</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
